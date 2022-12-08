@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, SafeAreaView, Button } from 'react-native';
+import { StyleSheet, View, SafeAreaView } from 'react-native';
 import { useState } from "react";
 
 import InfoContador from './src/components/InfoContador';
@@ -42,7 +41,7 @@ export default function App() {
           top={20} 
           onPress={() => incrementar(10)}/>
         <Botao 
-          size={"40%"} 
+          size={"100%"} 
           title="Zerar"
           top={20} 
           onPress={() => incrementar(-contador)}/>

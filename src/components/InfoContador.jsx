@@ -1,4 +1,7 @@
-import {View, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet, Dimensions} from "react-native";
+
+const width = Dimensions.get("screen").width;
+
 
 export default ({contador}) => {
     return (
@@ -32,6 +35,6 @@ const styles = StyleSheet.create({
     
       },
       contador: {
-        fontSize: 42
+        fontSize: width * 0.09
       },
 });
